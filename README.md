@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dokpamine Factory
+
+A productivity-focused SaaS platform providing various tools to increase user efficiency. The initial release features a powerful thumbnail creator with plans for future tool expansion.
+
+## Features
+
+- **Thumbnail Creator**: Create beautiful, professional thumbnails for videos, blog posts, and social media
+- **Modern UI**: Clean, responsive interface with dark mode support
+- **Real-time Preview**: See your thumbnail changes instantly
+- **Easy Export**: Download thumbnails as high-quality PNG files
+- **Extensible Architecture**: Built to support multiple productivity tools
+
+## Tech Stack
+
+- **Framework**: Next.js 16.0.1 (App Router)
+- **React**: 19.2.0
+- **TypeScript**: 5.x with strict mode
+- **Styling**: Tailwind CSS v4
+- **State Management**: Zustand
+- **Image Processing**: html-to-image
+- **Icons**: lucide-react
+- **Package Manager**: Bun
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+# Install dependencies
+bun install
+```
+
+### Development
+
+```bash
+# Start development server
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Build the application
+bun run build
 
-## Learn More
+# Start production server
+bun start
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Linting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Run ESLint
+bun run lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```
+dokpamin-factory/
+├── app/                    # Next.js App Router pages
+│   ├── layout.tsx         # Root layout with navigation
+│   ├── page.tsx           # Home dashboard
+│   └── thumbnail-creator/ # Thumbnail creator route
+├── components/            # React components
+│   ├── layout/           # Header, Sidebar, Navigation
+│   ├── thumbnail/        # Thumbnail creator components
+│   └── ui/               # Reusable UI components
+├── store/                # Zustand stores
+├── types/                # TypeScript type definitions
+├── SPEC.md               # Technical specification
+└── CLAUDE.md             # Development guidelines
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Creating Thumbnails
+
+1. Navigate to the Thumbnail Creator from the home page or sidebar
+2. Upload a background image (optional)
+3. Enter your title and subtitle
+4. Adjust dimensions using presets or custom values
+5. Preview your thumbnail in real-time
+6. Click "Download PNG" to save your thumbnail
+
+### Supported Image Formats
+
+- PNG
+- JPG/JPEG
+- WebP
+- Maximum file size: 5MB
+
+## Documentation
+
+- [SPEC.md](SPEC.md) - Comprehensive technical specification
+- [CLAUDE.md](CLAUDE.md) - Development guidelines for Claude Code
+
+## Future Roadmap
+
+- Color palette generator
+- Logo maker
+- QR code generator
+- Image compressor
+- Screenshot annotator
+- User authentication
+- Cloud storage integration
+- Template system
+
+## Contributing
+
+This project follows the specifications outlined in [SPEC.md](SPEC.md). Please review the technical documentation before contributing.
+
+## License
+
+MIT
