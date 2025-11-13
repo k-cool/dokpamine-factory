@@ -1,8 +1,12 @@
 # Dokpamine Factory
 
+> **🚀 Live Demo**: [https://dokpamine-factory.vercel.app](https://dokpamine-factory.vercel.app)
+
 A productivity-focused SaaS platform providing various tools to increase user efficiency. The initial release features a powerful thumbnail creator with plans for future tool expansion.
 
-## Features
+**Dokpamine Factory** is designed to streamline your content creation workflow by providing a suite of easy-to-use tools. Whether you're a content creator, marketer, or developer, our platform helps you create professional assets quickly and efficiently.
+
+## ✨ Features
 
 - **Thumbnail Creator**: Create beautiful, professional thumbnails for videos, blog posts, and social media
 - **Modern UI**: Clean, responsive interface with dark mode support
@@ -10,7 +14,27 @@ A productivity-focused SaaS platform providing various tools to increase user ef
 - **Easy Export**: Download thumbnails as high-quality PNG files
 - **Extensible Architecture**: Built to support multiple productivity tools
 
-## Tech Stack
+## 🎯 Quick Start
+
+Try the live application: **[dokpamine-factory.vercel.app](https://dokpamine-factory.vercel.app)**
+
+Or run it locally:
+
+```bash
+# Clone the repository
+git clone <your-repo-url>
+cd dokpamin-factory
+
+# Install dependencies
+bun install
+
+# Start development server
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view the application.
+
+## 🛠️ Tech Stack
 
 - **Framework**: Next.js 16.0.1 (App Router)
 - **React**: 19.2.0
@@ -21,42 +45,33 @@ A productivity-focused SaaS platform providing various tools to increase user ef
 - **Icons**: lucide-react
 - **Package Manager**: Bun
 
-## Getting Started
+## 💻 Local Development
 
-### Installation
+### Prerequisites
+
+- Node.js 20.9+ (required for Next.js 16)
+- Bun (recommended) or npm/yarn/pnpm
+
+### Installation & Commands
 
 ```bash
 # Install dependencies
 bun install
-```
 
-### Development
-
-```bash
 # Start development server
 bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
-
-### Build for Production
-
-```bash
-# Build the application
+# Build for production
 bun run build
 
 # Start production server
 bun start
-```
 
-### Linting
-
-```bash
-# Run ESLint
+# Run linter
 bun run lint
 ```
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 dokpamin-factory/
@@ -74,7 +89,7 @@ dokpamin-factory/
 └── CLAUDE.md             # Development guidelines
 ```
 
-## Usage
+## 📖 Usage
 
 ### Creating Thumbnails
 
@@ -92,12 +107,12 @@ dokpamin-factory/
 - WebP
 - Maximum file size: 5MB
 
-## Documentation
+## 📚 Documentation
 
 - [SPEC.md](SPEC.md) - Comprehensive technical specification
 - [CLAUDE.md](CLAUDE.md) - Development guidelines for Claude Code
 
-## Future Roadmap
+## 🗺️ Future Roadmap
 
 - Color palette generator
 - Logo maker
@@ -108,10 +123,16 @@ dokpamin-factory/
 - Cloud storage integration
 - Template system
 
-## Contributing
+## 🚀 Deployment
 
-This project follows the specifications outlined in [SPEC.md](SPEC.md). Please review the technical documentation before contributing.
+This project is deployed on [Vercel](https://vercel.com):
 
-## License
+**Production**: [https://dokpamine-factory.vercel.app](https://dokpamine-factory.vercel.app)
+
+## 📄 License
 
 MIT
+
+---
+
+Built with ❤️ using Next.js 16, React 19, and TypeScript
